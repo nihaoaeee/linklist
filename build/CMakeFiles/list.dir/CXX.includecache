@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/parallels/test/test2/include/my_list.h
+iostream
+-
+
+/home/parallels/test/test2/main.cc
+iostream
+-
+src/my_list.cc
+/home/parallels/test/test2/src/my_list.cc
+
+/home/parallels/test/test2/src/my_list.cc
+../include/my_list.h
+/home/parallels/test/test2/include/my_list.h
+
